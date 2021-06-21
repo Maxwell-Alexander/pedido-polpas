@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="cadastro-pedido.html">Pedidos</a></li>
+            <li><a href="cadastro-pedido.html">Cliente</a></li>
+            <li><a href="cadastro-sabores.html">Sabores</a></li>
+            <li><a href="#">Relatorios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>DASHBOARD</h2>
+        <div class="div-principal">
+            <div class="bto-dash">
+                <div class="btn"><a href="cadastro-pedido.html">Cadastro pedidos</a></div>
+                <div class="btn"><a href="cadastro-cliente.html">Cadastro cliente</a></div>
+                <div class="btn"><a href="cadastro-sabores.html">Cadastro sabores</a></div>
+                <div class="btn"><a href="#">Emissão relatorios</a></div>
+            </div>
+            <div class="grafico">
+                <canvas id="graficoPrimario"></canvas>
+            </div>
+            <div class="grafico">
+                <canvas id="graficoSecundario"></canvas>
+            </div>
+            <div class="grafico-maior">
+                <canvas id="graficoVendasMes" height="50"></canvas>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="fucoes.js"></script>
+</html>

@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+body::before{
+    content: "";
+    background-color: #000000;
+    height: 45vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    
+}
+.geral{
+    width: 85%;
+    max-width: 1000px;
+    padding: 10px;
+    
+
+    left: 50%;
+    top: 60%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conteiner-1{
+    box-shadow: 0px 0px 10px;
+    background-color: whitesmoke;
+    padding: 30px;
+    /*max-height: 40vh;*/
+}
+.conteiner-2{
+    width: 100%;
+    height: 18vh;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.parte-1,
+.parte-2,
+.parte-3,
+.parte-4{
+    width: 100%;
+}
+.parte-1{
+    width: 100%;
+    display: flex;
+}
+.parte-2{   /*  Dertemina a area maxima de rolagem para div da tabela*/
+    margin: 30px auto;
+    overflow: scroll;
+    max-height: 200px;
+    border: solid 2px #ff7223;
+}
+.parte-3{
+    margin: 20px auto;
+    height: 40px;
+    display: -webkit-flex;
+    flex-direction: row-reverse;
+
+}
+.parte-1-buscador{
+    width: 50%;
+    display: -webkit-flex;
+    justify-content: left;
+    align-content: center;
+}
+.parte-1-lista{
+    width: 50%;
+}
+#comprador{
+    width: 80%;
+    float: right;
+    list-style: none;
+    background-color: whitesmoke;
+    border: solid 1px orangered;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 20px;
+}
+#comprador{
+    width: 80%;
+    background-color: whitesmoke;
+    border: solid 1px orangered;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+input[type="reset"],
+input[type="submit"]{
+    color: whitesmoke;
+    width: 40%;
+    list-style: none;
+    background-color: orangered;
+    border: solid 1px orangered;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 20px;
+}
+input[type="submit"]{
+    float: right;
+}
+input[type="reset"]:hover,
+input[type="submit"]:hover{
+    background-image: linear-gradient(180deg, #fcab7c, orangered);
+    cursor: pointer;
+}
+table{
+    width: 100%;
+}
+.parte-3-filho_2{
+    text-align: right;
+    color: whitesmoke;
+    width: 40%;
+    background-color: orangered;
+   
+
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 1px orangered;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    
+
+}
+.parte-3-filho_1{
+    width: 40%;
+    color: orangered;
+    background-color: whitesmoke;
+
+    border: solid 1px orangered;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+
+    display: -webkit-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#vlr_total{
+    margin-right: 10px;
+}
+th{
+    background-color: orangered;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONFIGURAÇÕES DA LIS DE SABORES*/
+
+
+#lista{     /*  Lista geral*/
+    
+    background-color: whitesmoke;
+    border: solid 1px orangered;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    position: fixed;
+    float: right;
+    width: 46%;
+    
+    list-style: none;
+    font-size: 20px;
+}
+#lista a{
+    text-decoration: none;
+    color: #616161;
+    margin-left: 10px;
+}
+ul ul{  /*  Configuração que apaga lista estilo-dropdown*/
+    display: none;
+    list-style: none;
+    
+}
+.rolagem{   /*  Div criada para rolagem dos opções de sabores*/
+    max-height: 256px;
+    overflow: auto;
+    overflow-x: hidden; /* remove a barra horizontal*/
+    
+}
+#lista_secundaria{  /*  Lista secundaria para dropdown*/
+    margin-top: 10px;
+    color: whitesmoke;
+}
+#lista_secundaria li{   /*  Configuração da lista secundaria*/
+    background-color: orangered;
+    border-radius: 0;
+    padding: 5px;
+
+    border-bottom: solid 1px whitesmoke;
+    border-left: solid 5px orangered;
+    border-right: solid 10px orangered;
+
+    display: flex;
+    align-items: center;
+    
+
+}
+#lista_secundaria li:hover{
+    background-color: #ff7442;
+}
+.lista_secundaria_part_1{   /*  Div para configuração do checkbox e nome*/
+    width: 90%;
+}
+.lista_secundaria_part_2{   /*  Div para configuração do input quatidade*/
+    display: -webkit-flex;
+    justify-content: flex-end;
+}
+i{
+    color: orangered;
+    float: right;
+    margin-right: 10px;
+}
+#adicionar_pedido{  /*  Botão de adicionar pedido a relação*/
+    font-size: 20px;
+    width: 80%;
+    height: 5vh;
+
+    color: whitesmoke;
+    background-color: orangered;
+    border: none;
+}
+#adicionar_pedido:hover{
+    background-image: linear-gradient(180deg, #fcab7c, orangered);
+}
+.qtd_produto{
+    width: 50%;
+    height: 3vh;
+    text-align: center;
+    font-size: 20px;
+}
+.selecionar_cliente{
+    margin-right: 10px;
+}
+
+
+#lista_secundaria .linha_botao{
+    background-color: whitesmoke;
+    justify-content: center;
+    border: none;
+}
+#lista_secundaria .linha_botao:hover{
+    background-color: whitesmoke;
+}
+.linha_botao input{
+    color: whitesmoke;
+}
+.linha_botao input:hover{
+    background-image: linear-gradient(180deg, orangered,  red);
+}
+
+

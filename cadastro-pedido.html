@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-3.css">
+    <script src="https://kit.fontawesome.com/5a9e0298a0.js" crossorigin="anonymous"></script>
+    <title>Cadastro Pedido</title>
+</head>
+
+<body>
+    <main>
+        <div class="geral">
+            <h1>Cadastro de Pedido</h1>
+            <div class="conteiner-1">
+                <form action="#" method="POST">
+                    <div class="parte-1">
+                        <div class="parte-1-buscador">
+                            <input type="search" name="buscar_comprador" id="comprador"
+                                placeholder="Selecione o comprador...">
+                        </div>
+
+
+                        <div class="parte-1-lista">
+
+
+                            <ul>
+                                <li id="lista"><a href="#" onclick="click_down()">Selecione uma opção...<i
+                                            class="fas fa-chevron-down"></i></a>
+                                    <ul id="lista_secundaria">
+                                        <div class="rolagem">
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente" unchecked>SABOR-01
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente">SABOR-02
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente">SABOR-03
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente">SABOR-04
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente">SABOR-05
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente">SABOR-06
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente">SABOR-07
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lista_secundaria_part_1">
+                                                    <input type="checkbox" name="" id=""
+                                                        class="selecionar_cliente">SABOR-08
+                                                </div>
+                                                <div class="lista_secundaria_part_2">
+                                                    <input type="number" name="" id="" class="qtd_produto" min="1"
+                                                        step="1" required>
+                                                </div>
+                                            </li>
+                                        </div>
+
+                                        <li class="linha_botao">
+                                            <input type="button" value="Adicionar" id="adicionar_pedido">
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="parte-2">
+                        <table>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sabor</th>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                            </tr>
+                            <tr>
+                                <td>Fulano-1</td>
+                                <td>Sabor-1</td>
+                                <td>Quantidade-1</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-2</td>
+                                <td>Sabor-2</td>
+                                <td>Quantidade-2</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-3</td>
+                                <td>Sabor-3</td>
+                                <td>Quantidade-3</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-4</td>
+                                <td>Sabor-4</td>
+                                <td>Quantidade-4</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-5</td>
+                                <td>Sabor-5</td>
+                                <td>Quantidade-5</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-6</td>
+                                <td>Sabor-6</td>
+                                <td>Quantidade-6</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-7</td>
+                                <td>Sabor-7</td>
+                                <td>Quantidade-7</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-8</td>
+                                <td>Sabor-8</td>
+                                <td>Quantidade-8</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano-9</td>
+                                <td>Sabor-9</td>
+                                <td>Quantidade-9</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+
+                    <div class="parte-3">
+                        <div class="parte-3-filho_1">
+                            <p id="vlr_total">R$ 0,00</p>
+                        </div>
+                        <div class="parte-3-filho_2">
+                            <p>Valor Total</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="parte-4">
+                        <input type="reset">
+                        <input type="submit">
+
+                    </div>
+
+                </form>
+            </div>
+
+
+            <div class="conteiner-2">
+                <a href="index.html"><i class="fas fa-arrow-circle-left fa-4x"></i></a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</script>
+<script src="fucoes.js"></script>
+
+</html>
